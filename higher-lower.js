@@ -1,8 +1,27 @@
-console.log("hello")
+let range = prompt("please enter the maximum number you want to guess between.");
+
+function maxnumber() {
+
+    if (isNaN(range)) {
+        return maxnumber();
+    }
+    else if (range <= 2) {
+        return maxnumber();
+    }
+    else {
+        return range;
+    }
+}
+maxnumber();3
+console.log (range);
+
 
 let num = Math.floor(Math.random() * 20) +1;
 
 console.log(num);
+
+
+
 
 function do_guess() {
     let guess = Number(document.getElementById("guess").value);
