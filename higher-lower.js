@@ -30,7 +30,7 @@ while (!rightNum) {
         let message = document.getElementById('message')
 
         if (count.includes(guess1)) {
-            message.innerHTML = 'You guessed that already, try another number';
+            message.innerHTML = 'You guessed that already, try another number.';
         } else if(isNaN(guess1)) {
             message.innerHTML = 'That input is not a number.'
         } else if (guess1 > num || guess1 < 1) {
@@ -43,7 +43,7 @@ while (!rightNum) {
                 guess1 > randomNum ? ' a lower number' : ' a higher number'
                 message.innerHTML = `try guessing ${hint}`
             } else {
-                message.innerHTML = `Congratulations! you got it right (${guess1}), and it took you ${count.length} tries and your guesses were ${count}.`
+                message.innerHTML = `Congratulations! you got it right (${guess1}), it took you ${count.length} tries and your guesses were ${count}.`
             }
         } else {
             return
