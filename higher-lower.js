@@ -1,18 +1,20 @@
-let range = prompt("please enter the maximum number you want to guess between.");
+
 
 function maxnumber() {
-
+let range = prompt("please enter the maximum number you want to guess between.");
     if (isNaN(range)) {
+        alert("That is not a number please try again");
         return maxnumber();
     }
     else if (range <= 2) {
+        alert("Please enter a larger range");
         return maxnumber();
     }
     else {
         return range;
     }
 }
-maxnumber();3
+maxnumber();
 console.log (range);
 
 
