@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    background-color: rgb(252, 215, 168);
+}
+
+.form-group {
+    font-weight: 700;
+}
+
+.btn {
+    background-color: teal;
+    color: white;
+}
+
+.btn:hover {
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-weight: 600;
+}
