@@ -1,6 +1,7 @@
 body {
     text-align: center;
     background-color: rgb(252, 215, 168);
+    align-items: center;
 }
 
 .form-group {

@@ -14,6 +14,7 @@ let message2 = document.getElementById('message2')
 message2.innerHTML = `Guess a number between 1 and ${num}`
 
 let randomNum = Math.floor(Math.random() * num) + 1
+console.log(randomNum)
 
 let countGuess = 0
 let count = []
@@ -28,7 +29,9 @@ while (!rightNum) {
         let guess1 = Math.round(Number(inputguess))
         let message = document.getElementById('message')
 
-        if(isNaN(guess1)) {
+        if (count.includes(guess1)) {
+            message.innerHTML = 'You guessed that already, try another number';
+        } else if(isNaN(guess1)) {
             message.innerHTML = 'That input is not a number.'
         } else if (guess1 > num || guess1 < 1) {
             message.innerHTML = 'That number is not in range, please try again.'
